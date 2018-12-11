@@ -1,0 +1,421 @@
+@font-face {
+  font-family: 'WooCommerce';
+  src: url('../fonts/WooCommerce.eot');
+  src: url('../fonts/WooCommerce.eot?#iefix') format('embedded-opentype'), url('../fonts/WooCommerce.woff') format('woff'), url('../fonts/WooCommerce.ttf') format('truetype'), url('../fonts/WooCommerce.svg#WooCommerce') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.blockOverlay:before {
+  height: 1em;
+  width: 1em;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -0.5em;
+  margin-top: -0.5em;
+  content: '';
+  -webkit-animation: spin 1s ease-in-out infinite;
+  animation: spin 1s ease-in-out infinite;
+  background: url(/wp-content/plugins/woocommerce/assets/images/icons/loader.svg) center center;
+  background-size: cover;
+  line-height: 1;
+  text-align: center;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.75);
+}
+.woocommerce-message,
+.woocommerce-error,
+.woocommerce-info {
+  padding: 1em 2em 1em 3.5em;
+  margin: 0 0 2em;
+  position: relative;
+  background-color: #f7f6f7;
+  color: #515151;
+  border-top: 3px solid #8fae1b;
+  list-style: none outside;
+  clear: both;
+  width: auto;
+  word-wrap: break-word;
+}
+.woocommerce-message::before,
+.woocommerce-error::before,
+.woocommerce-info::before {
+  font-family: 'WooCommerce';
+  content: '\e028';
+  display: inline-block;
+  position: absolute;
+  top: 1em;
+  left: 1.5em;
+}
+.woocommerce-message .button,
+.woocommerce-error .button,
+.woocommerce-info .button {
+  float: right;
+}
+.woocommerce-message li,
+.woocommerce-error li,
+.woocommerce-info li {
+  list-style: none outside !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+.woocommerce-message a,
+.woocommerce-error a,
+.woocommerce-info a {
+  color: #337ab7;
+}
+.woocommerce-message {
+  border-top-color: #8fae1b;
+}
+.woocommerce-message::before {
+  content: '\e015';
+  color: #8fae1b;
+}
+.woocommerce-info {
+  border-top-color: #1e85be;
+}
+.woocommerce-info::before {
+  color: #1e85be;
+}
+.woocommerce-error {
+  border-top-color: #b81c23;
+}
+.woocommerce-error::before {
+  content: '\e016';
+  color: #b81c23;
+}
+@media (max-width: 768px) {
+  .woocommerce-message,
+  .woocommerce-error,
+  .woocommerce-info {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .woocommerce-message a,
+  .woocommerce-error a,
+  .woocommerce-info a {
+    margin-top: 15px;
+  }
+  .b-basket-form-box-2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.woocommerce-password-strength {
+  text-align: center;
+  font-weight: 600;
+  padding: 3px 0.5em;
+  font-size: 0.8em;
+}
+.woocommerce-password-strength.strong {
+  background-color: #c1e1b9;
+  border-color: #83c373;
+}
+.woocommerce-password-strength.short {
+  background-color: #f1adad;
+  border-color: #e35b5b;
+}
+.woocommerce-password-strength.bad {
+  background-color: #fbc5a9;
+  border-color: #f78b53;
+}
+.woocommerce-password-strength.good {
+  background-color: #ffe399;
+  border-color: #ffc733;
+}
+.woocommerce-password-hint {
+  margin: 0.5em 0 0;
+  display: block;
+  font-size: 68%;
+}
+body div.wpcf7 .ajax-loader {
+  display: block;
+  margin: 5px auto 0;
+}
+body div.wpcf7 span.wpcf7-not-valid-tip {
+  font-size: 11px;
+  padding-top: 3px;
+}
+body div.wpcf7 div.wpcf7-response-output {
+  margin: 1em auto;
+  text-align: center;
+}
+body div.wpcf7 .wpcf7-response-output {
+  display: none !important;
+}
+.page-template-landing .main-form {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.page-template-landing .main-form .form-group-btn {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.page-template-landing .personal-data {
+  margin-top: 0;
+  padding-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.page-template-landing .personal-data input {
+  display: block;
+  position: absolute;
+  opacity: 0;
+}
+.home .help-block a {
+  color: #9ea5ae !important;
+}
+.home .b-index-double form br {
+  display: none;
+}
+.b-champ-inf a {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.61);
+  -webkit-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+.b-champ-inf a:last-child {
+  color: rgba(9, 82, 156, 0.61);
+  text-decoration: underline;
+}
+.b-champ-inf a:hover {
+  color: #000;
+}
+.modal-wind .f_contact .checkbox-box {
+  color: white;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+}
+.modal-wind .f_contact br {
+  display: none;
+}
+#modal-thanks-subs {
+  text-align: center;
+  color: white;
+}
+.aws-container .aws-show-clear .aws-search-field {
+  height: 30px !important;
+}
+.header-search .btn {
+  z-index: 2;
+}
+.aws-container .aws-search-form .aws-loader,
+.aws-search-clear {
+  right: 25px !important;
+}
+.b-lk-sog input {
+  display: block;
+  position: absolute;
+  opacity: 0;
+}
+.b-champ-line > .b-champ-line-tc:nth-child(2) .location,
+.b-basket-line > .b-basket-line-tc:nth-child(2) .location {
+  display: inline-block;
+  position: relative;
+  padding-left: 18px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #797979;
+  -webkit-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+.b-champ-line > .b-champ-line-tc:nth-child(2) .location a,
+.b-basket-line > .b-basket-line-tc:nth-child(2) .location a {
+  color: #797979;
+}
+.b-champ-line > .b-champ-line-tc:nth-child(2) .location a:hover,
+.b-basket-line > .b-basket-line-tc:nth-child(2) .location a:hover {
+  color: #000;
+}
+.b-champ-line > .b-champ-line-tc:nth-child(2) .location:after,
+.b-basket-line > .b-basket-line-tc:nth-child(2) .location:after {
+  content: '';
+  width: 14px;
+  height: 21px;
+  background: url(../img/ic-map-2.png);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+  opacity: 0.25;
+  -webkit-transition: opacity 0.4s ease;
+  -ms-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+.b-basket-line > .b-basket-line-tc:last-child ins {
+  text-decoration: none;
+}
+a.b-tickets-tur {
+  bottom: 30px;
+}
+@media (max-width: 991px) {
+  a.b-tickets-tur {
+    bottom: 0;
+  }
+}
+.b-champ-line .champ-title,
+.b-basket-line .champ-title {
+  font-family: 'PT Sans', sans-serif !important;
+  font-size: 19px !important;
+  line-height: 23px !important;
+  font-weight: 400 !important;
+  color: #000 !important;
+  margin-bottom: 10px !important;
+  padding-left: 0 !important;
+  display: block !important;
+}
+.b-champ-line .champ-title:before,
+.b-basket-line .champ-title:before {
+  display: none;
+}
+.b-tickets-adres img {
+  margin-right: 5px;
+}
+.b-tickets-adres .location {
+  display: inline-block;
+}
+.b-tickets-adres a {
+  display: inline-block;
+  position: relative;
+  font-size: 16.67px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #797979;
+  -webkit-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+.b-tickets-adres a:hover {
+  color: black;
+}
+.b-tickets-line-tc {
+  border-left: 3px solid white;
+}
+.b-tickets-line-tc:before {
+  display: none;
+}
+.b-tickets-line-tc .price ins {
+  display: block;
+  text-decoration: none;
+  margin-top: 5px;
+}
+.b-tickets-line > .b-tickets-line-tc:nth-child(2) {
+  padding: 10px 5px;
+}
+.b-basket-promo {
+  display: block;
+}
+.selectpicker {
+  display: block;
+  padding: 8px 15px;
+  margin-bottom: 15px;
+  font-family: 'Roboto';
+  font-size: 12.5px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: none;
+  color: rgba(0, 0, 0, 0.38);
+  background: #fff;
+  border: 1px solid #dee1e6;
+  border-radius: 0px;
+  color: #000;
+  background-color: #fff;
+  border-color: #dee1e6;
+}
+.wc_payment_method img {
+  max-height: 18px;
+  margin-left: 5px;
+}
+.shipping_method .woocommerce-Price-amount {
+  display: none;
+}
+.input-number {
+  -moz-appearance: textfield;
+}
+.input-number::-webkit-outer-spin-button,
+.input-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.woocommerce-order-pay .woocommerce {
+  padding: 100px 0;
+}
+.woocommerce-order-pay .order_details {
+  list-style: none;
+  font-size: 17px;
+}
+.woocommerce-order-pay input {
+  display: block;
+  width: 260px;
+  padding: 9px 0px;
+  padding-top: 10px;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #63c82c;
+  border: 0px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 3px 0px 0px #4e8822;
+  -moz-box-shadow: 0px 3px 0px 0px #4e8822;
+  box-shadow: 0px 3px 0px 0px #4e8822;
+  -webkit-transition: box-shadow 0.4s ease;
+  -ms-transition: box-shadow 0.4s ease;
+  transition: all 0.4s ease;
+}
+.woocommerce-order-pay input:hover {
+  background-color: #52a725;
+}
+.b-cabinet .b-lk label {
+  font-size: 12.5px;
+  margin-bottom: 3px;
+}
+.page-404 {
+  display: flex;
+  justify-content: center;
+  background: url("https://www.imj.org.il/sites/default/files/404.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 70vh;
+}
+.woocommerce-checkout-review-order-table .select2 {
+  margin: 10px 0 15px;
+}
+.footer-mobile-menu {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+.footer-mobile-menu .b-footer-item {
+  border: none;
+}
+@media (min-width: 768px) {
+  .footer-mobile-menu {
+    display: none;
+  }
+}
